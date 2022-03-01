@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{735EE3B6-3930-48F2-B9E9-3DFDCA8DBA95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hospital_P.My.MyApplication</StartupObject>
+    <RootNamespace>Hospital_P</RootNamespace>
+    <AssemblyName>Hospital_P</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hospital_P.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hospital_P.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3866A05EE6084FFDAC22CD04F25F81D8FDF45EA5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Hospital_P_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmitteLoginForm1.Designer.vb">
+      <DependentUpon>AdmitteLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmitteLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bedregistration.Designer.vb">
+      <DependentUpon>bedregistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bedregistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Childrenform.Designer.vb">
+      <DependentUpon>Childrenform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Childrenform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childrenLoginForm1.Designer.vb">
+      <DependentUpon>childrenLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childrenLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discharge.Designer.vb">
+      <DependentUpon>Discharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Discharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctorforms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctorforms.Designer.vb">
+      <DependentUpon>Doctorforms.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorLoginForm1.Designer.vb">
+      <DependentUpon>doctorLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doctorLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="warldbygldetails.Designer.vb">
+      <DependentUpon>warldbygldetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="warldbygldetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waldLoginForm1.Designer.vb">
+      <DependentUpon>waldLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="waldLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="midwiferyLoginForm1.Designer.vb">
+      <DependentUpon>midwiferyLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="midwiferyLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPDLoginForm1.Designer.vb">
+      <DependentUpon>OPDLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPDLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1labtecnic.Designer.vb">
+      <DependentUpon>LoginForm1labtecnic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1labtecnic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pharmacisLoginForm1.Designer.vb">
+      <DependentUpon>pharmacisLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacisLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pharmacistform.Designer.vb">
+      <DependentUpon>pharmacistform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacistform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPDform.Designer.vb">
+      <DependentUpon>OPDform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPDform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctordetailform.Designer.vb">
+      <DependentUpon>Doctordetailform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doctordetailform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labtech.Designer.vb">
+      <DependentUpon>Labtech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Labtech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmitteLoginForm1.resx">
+      <DependentUpon>AdmitteLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bedregistration.resx">
+      <DependentUpon>bedregistration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Childrenform.resx">
+      <DependentUpon>Childrenform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childrenLoginForm1.resx">
+      <DependentUpon>childrenLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discharge.resx">
+      <DependentUpon>Discharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctorforms.resx">
+      <DependentUpon>Doctorforms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorLoginForm1.resx">
+      <DependentUpon>doctorLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waldLoginForm1.resx">
+      <DependentUpon>waldLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="midwiferyLoginForm1.resx">
+      <DependentUpon>midwiferyLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPDLoginForm1.resx">
+      <DependentUpon>OPDLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1labtecnic.resx">
+      <DependentUpon>LoginForm1labtecnic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pharmacisLoginForm1.resx">
+      <DependentUpon>pharmacisLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pharmacistform.resx">
+      <DependentUpon>pharmacistform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labtech.resx">
+      <DependentUpon>Labtech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPDform.resx">
+      <DependentUpon>OPDform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctordetailform.resx">
+      <DependentUpon>Doctordetailform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="warldbygldetails.resx">
+      <DependentUpon>warldbygldetails.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Hospital_P_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
